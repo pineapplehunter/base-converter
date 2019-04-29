@@ -8,7 +8,7 @@
   
       <v-toolbar-items>
         <v-btn flat href="https://twitter.com/daniel_program">Twitter</v-btn>
-        <v-btn flat>Github</v-btn>
+        <v-btn flat href="https://github.com/pineapplehunter/base-converter">Github</v-btn>
       </v-toolbar-items>
     </v-toolbar>
     <v-content>
