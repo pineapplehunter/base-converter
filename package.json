@@ -27,6 +27,5 @@
     "vite": "^4.1.4",
     "vite-plugin-vuetify": "^1.0.2"
   },
-  "type": "module",
-  "packageManager": "yarn@3.4.1"
+  "type": "module"
 }
