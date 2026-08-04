@@ -1,0 +1,35 @@
+{
+  description = "A basic shell";
+
+  inputs.nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+  inputs.flake-parts.url = "github:hercules-ci/flake-parts";
+
+  outputs =
+    { flake-parts, ... }@inputs:
+    flake-parts.lib.mkFlake { inherit inputs; } {
+      systems = [
+        "aarch64-darwin"
+        "aarch64-linux"
+        "x86_64-linux"
+      ];
+
+      perSystem =
+        { pkgs, system, ... }:
+        {
+          _module.args.pkgs = import inputs.nixpkgs {
+            inherit system;
+            overlays = [
+              # Add overlays as needed
+            ];
+          };
+
+          devShells.default = pkgs.mkShell {
+            packages = with pkgs; [
+              bun
+            ];
+          };
+
+          formatter = pkgs.nixfmt-tree;
+        };
+    };
+}

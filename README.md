@@ -1,29 +1,19 @@
 # base-conv
 
-## Project setup
-```
-npm install
+Base converter built with Vue, Vite, Tailwind CSS, and Bun.
+
+## Setup
+
+```bash
+bun install
+bun run dev
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Scripts
 
-### Compiles and minifies for production
+```bash
+bun run dev
+bun run build
+bun run preview
+bun run lint
 ```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

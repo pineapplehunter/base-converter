@@ -2,30 +2,29 @@
   "name": "base-conv",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "bun@1.1.38",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --fix --ignore-path .gitignore"
+    "dev": "bunx vite",
+    "build": "bunx vite build",
+    "preview": "bunx vite preview",
+    "lint": "bunx eslint .",
+    "format": "bunx prettier . --write"
   },
   "dependencies": {
-    "@mdi/font": "7.1.96",
-    "core-js": "^3.29.0",
-    "roboto-fontface": "^0.10.0",
-    "vue": "^3.2.47",
-    "vue-router": "^4.1.6",
-    "vuetify": "^3.1.7",
-    "webfontloader": "^1.6.28"
+    "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
-    "@vue/eslint-config-typescript": "^11.0.2",
-    "eslint": "^8.35.0",
-    "eslint-plugin-vue": "^9.9.0",
-    "sass": "^1.58.3",
-    "typescript": "^4.9.5",
-    "vite": "^4.1.4",
-    "vite-plugin-vuetify": "^1.0.2"
+    "@eslint/js": "^9.17.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "eslint": "^9.17.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^15.14.0",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.18.0",
+    "vite": "^6.0.7"
   },
   "type": "module"
 }
